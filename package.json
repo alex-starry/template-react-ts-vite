@@ -3,8 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite --mode dev",
+    "dev:alp": "vite --mode alp",
+    "dev:uat": "vite --mode uat",
+    "dev:prd": "vite --mode prd",
+    "alp": "tsc && vite build --mode alp",
+    "uat": "tsc && vite build --mode uat",
+    "prd": "tsc && vite build --mode prd",
+
     "preview": "vite preview"
   },
   "dependencies": {
